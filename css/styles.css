@@ -4,10 +4,9 @@
     font-family: 'lato', sans-serif;
 }
 
-body {
-    background-color: #f1f1f1;
+body{
+    background-size: cover;
 }
-
 .conteudo {
     display: flex;
     flex-direction: row;
@@ -56,7 +55,6 @@ h2 {
 
 
 .calendario thead {
-    background-color: white;
     font-size: 600;
     text-transform: uppercase;
 }
@@ -92,10 +90,9 @@ h2 {
     margin-inline-end: 0px;
     font-weight: bold;
 }
-
 .calendario .mes-anterior,
 .calendario .prox-mes {
-    color: #cbd1d2;
+    color: #878a8b;
 }
 
 .calendario .mes-anterior:hover,
@@ -103,11 +100,10 @@ h2 {
     background: #98a0a0;
 }
 
-.event {
+.event1 {
     position: relative;
 }
-
-.event:after {
+.event1::before {
     content: '';
     width: 7px;
     height: 7px;
@@ -119,29 +115,91 @@ h2 {
     position: absolute;
     border-radius: 50%;
 }
-
-.event:hover {
+.event1:hover {
     background: #f9f9f9;
 }
 
-.event.dia-atual::after {
+.event2 {
+    position: relative;
+}
+.event2::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    left: 50%;
+    bottom: 7px;
+    margin: -3.5px 0 0 -3.5px;
+    background: #fa4700;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+}
+.event2:hover {
+    background: #f9f9f9;
+}
+
+.event3 {
+    position: relative;
+}
+.event3::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    left: 50%;
+    bottom: 7px;
+    margin: -3.5px 0 0 -3.5px;
+    background: #d000fa;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+}
+.event3:hover {
+    background: #f9f9f9;
+}
+
+.event4 {
+    position: relative;
+}
+.event4::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    left: 50%;
+    bottom: 7px;
+    margin: -3.5px 0 0 -3.5px;
+    background: #00fa68;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+}
+.event4:hover {
+    background: #f9f9f9;
+}
+
+.event.dia-atual::before {
     background: #f9f9f9;
 }
 
 .dom {
     color: #ff0000;
 }
+.dom-ant {
+    color: #f73f3f !important;
+}
+.dom-ant:hover {
+    color: #f9f9f9 !important;
+}
 
-.event-rodape {
+
+.event-rodape1 {
     position: relative;
     border: none !important;
 }
-
-.event-rodape:after {
+.event-rodape1::before {
     content: '';
     width: 7px;
     height: 7px;
-    left: 110%;
+    left: 7px;
     top: 0;
     bottom: 7px;
     margin: -4.5px 0 0 -4.5px;
@@ -151,24 +209,89 @@ h2 {
     border-radius: 50%;
     margin: 5px 0;
 }
+.event-rodape1:hover {
+    background: #f9f9f9;
+}
 
-.event-rodape:hover {
+.event-rodape2 {
+    position: relative;
+    border: none !important;
+}
+.event-rodape2::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    left: 7px;
+    top: 0;
+    bottom: 7px;
+    margin: -4.5px 0 0 -4.5px;
+    background: #fa4700;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    margin: 5px 0;
+}
+.event-rodape2:hover {
+    background: #f9f9f9;
+}
+
+.event-rodape3 {
+    position: relative;
+    border: none !important;
+}
+.event-rodape3::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    left: 7px;
+    top: 0;
+    bottom: 7px;
+    margin: -4.5px 0 0 -4.5px;
+    background: #d000fa;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    margin: 5px 0;
+}
+.event-rodape3:hover {
+    background: #f9f9f9;
+}
+
+.event-rodape4 {
+    position: relative;
+    border: none !important;
+}
+.event-rodape4::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    left: 7px;
+    top: 0;
+    bottom: 7px;
+    margin: -4.5px 0 0 -4.5px;
+    background: #00fa68;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    margin: 5px 0;
+}
+.event-rodape4:hover {
     background: #f9f9f9;
 }
 
 #margin {
     padding-left: 20px;
+    margin-bottom: 5px;
 }
-
 
 .voltar {
     padding: 6px 10px;
     height: 32px;
     width: 32px;
     line-height: 32px;
-    border: 2px solid #cbd1d2;
+    border: 2px solid #000;
     border-radius: 50%;
-    color: #cbd1d2;
+    color: #000;
     font-size: 16px;
     font-weight: bold;
 }
@@ -176,6 +299,7 @@ h2 {
 .voltar:hover {
     background-color: #cbd1d2;
     color: #f9f9f9;
+    border: 2px solid #cbd1d2
 }
 
 .proximos {
@@ -183,9 +307,9 @@ h2 {
     height: 32px;
     width: 32px;
     line-height: 32px;
-    border: 2px solid #cbd1d2;
+    border: 2px solid #000;
     border-radius: 50%;
-    color: #cbd1d2;
+    color: #000;
     font-size: 16px;
     font-weight: bold;
 }
@@ -193,7 +317,40 @@ h2 {
 .proximos:hover {
     background-color: #cbd1d2;
     color: #f9f9f9;
+    border: 2px solid #cbd1d2;
 }
 .feriados{
-    max-width: 150px;
+    width: 150px;
+    text-align: initial;
+}
+.links{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+.links a{
+    text-decoration: none;
+    padding: 10px;
+    height: 15px;
+    width: 15px;
+    line-height: 15px;
+    border: 2px solid #a8acad;
+    color: black;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: bold;
+}
+.links a:hover{
+    background-color: #a8acad;
+    color: #f9f9f9;
+}
+.links a:nth-last-child(-n+3){
+    font-size: 14px !important;
+}
+.inutil{
+    width: 150px;
+}
+td, th{
+    font-weight: bold;
 }
