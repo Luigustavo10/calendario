@@ -350,6 +350,7 @@ h2 {
 }
 .inutil{
     width: 150px;
+    height: 150px;
 }
 td, th{
     font-weight: bold;
